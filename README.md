@@ -30,6 +30,7 @@ HR@10 ~=0.70 with 4 random negative samples for training
 
 Reference
 -------
+This study based on following study:
 ```
 @inproceedings{10.1145/3038912.3052569,
 author = {He, Xiangnan and Liao, Lizi and Zhang, Hanwang and Nie, Liqiang and Hu, Xia and Chua, Tat-Seng},
