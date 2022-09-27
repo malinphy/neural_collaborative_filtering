@@ -22,6 +22,8 @@ For training and evaluation process ml 100K was used and can be downloaded from 
 https://github.com/malinphy/datasets/tree/main/ml100K
 <br>
 https://grouplens.org/datasets/movielens/100k/
+<br>
+
 Evaluation
 -------
 HR@10 ~=0.70 with 4 random negative samples for training
