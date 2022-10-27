@@ -21,8 +21,9 @@ File Description :
 - mlp_model_weights.h5 : model weights for later usage
 
 Usage :
+---
 if necessary download repo and create an virtual env using following commands 
-----
+<br/>
 download file 
 ```
 conda create --name exp_env
@@ -40,16 +41,7 @@ Training & Prediction
 -------
 For ncf_train.py all helper functions, encoding files and model will be imported and model weights and dictionaires will be saved.
 <br>
-For deployment purpose model ncf_train.py is shared. Model, model weights, and dictionaries will imported and final prediction will performed for selected user.
-
-Dataset
--------
-For training and evaluation process ml 100K was used and can be downloaded from links below:
-<br>
-https://github.com/malinphy/datasets/tree/main/ml100K
-<br>
-https://grouplens.org/datasets/movielens/100k/
-<br>
+For deployment purpose model ncf_predict.py is shared. Model, model weights, and dictionaries will imported and final prediction will performed for selected user.
 
 Evaluation
 -------
