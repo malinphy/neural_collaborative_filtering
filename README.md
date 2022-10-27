@@ -1,19 +1,46 @@
 # neural_collaborative_filtering
-Requirements
--------
+collaborative filtering with neural networks on ml100K dataset
+
+Data :
+----
+For training and evaluation process ml 100K was used and can be downloaded from links below:
+<br>
+https://github.com/malinphy/datasets/tree/main/ml100K
+<br>
+https://grouplens.org/datasets/movielens/100k/
+<br>
+
+File Description :
+----
+- config.py : configuration parameters for model
+- negative_makers.py : random negative sampling 
+- model.py : nueral network model
+- ncf_train.py : nueral network model
+- enc_2item.pkl, item_2enc, item_2title, title_2item, user_2enc, enc_2user : dictionaries as pickle file for prediction.py
+- ncf_predict.py : prediction file for deployment purpose 
+- mlp_model_weights.h5 : model weights for later usage
+
+Usage :
+if necessary download repo and create an virtual env using following commands 
+----
+download file 
 ```
-python_version : 3.7.14
-numpy_version : 1.21.6
-pandas_version : 1.3.5
-sklearn_version : 1.0.2
-tensorflow_version : 2.8.2
-keras_version : 2.8.0
+conda create --name exp_env
+conda activate exp_env
 ```
+find the folder directory in exp_env
+```
+pip install -r requirements.txt 
+```
+run ***ncf_train.py*** file 
+<br/>
+for deployment purpose prediction file created seperately as ***ncf_predict.py***
+
 Training & Prediction
 -------
 For ncf_train.py all helper functions, encoding files and model will be imported and model weights and dictionaires will be saved.
 <br>
-For deployment purpose model nc_predict.py is shared. Model, model weights, and dictionaries will imported and final prediction will performed for selected user.
+For deployment purpose model ncf_train.py is shared. Model, model weights, and dictionaries will imported and final prediction will performed for selected user.
 
 Dataset
 -------
